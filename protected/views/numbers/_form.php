@@ -27,7 +27,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'owner'); ?>
-		<?php echo $form->dropDownList($model,'owner', array('individual'=>'Individual','entity'=>'Entity'), array('empty'=>'Select a type')); ?>
+		<?php echo $form->dropDownList($model,'owner', array('individual'=>'Individual','entity'=>'Entity'), array('onclick'=>'hideElement()','id'=>'owner')); ?>
 		<?php echo $form->error($model,'owner'); ?>
 	</div>
 
@@ -38,8 +38,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'entity_name'); ?>
-		<?php echo $form->textArea($model,'entity_name',array('rows'=>4, 'cols'=>50, 'visible'=>false)); ?>
+		<?php echo $form->labelEx($model,'entity_name', array('style'=>'display:none;','id'=>'name_label')); ?>
+		<?php echo $form->textArea($model,'entity_name',array('rows'=>4, 'cols'=>50, 'hidden'=>true,'id'=>'name_area')); ?>
 		<?php echo $form->error($model,'entity_name'); ?>
 	</div>
 
@@ -50,3 +50,22 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script type="text/javascript">
+	hideElement();
+	/**
+	 * This function displays the field depending on the type.
+	 */
+	function hideElement(){
+		var type 		= document.getElementById('owner').value,
+			name_area 	= document.getElementById('name_area'),
+			name_label 	= document.getElementById('name_label');
+		if(type == 'entity'){
+			name_area.hidden = false;
+			name_label.style.display = 'block';
+		}else{
+			name_area.hidden = true;
+			name_label.style.display = 'none';
+		}
+	}
+</script>
