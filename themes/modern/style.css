@@ -507,3 +507,17 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+
+ul.yiiPager .selected a {
+	background: #f44903;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+ul.yiiPager a:link, ul.yiiPager a:visited {
+	border: solid 1px #9aafe5;
+	font-weight: bold;
+	color: #c00;
+	padding: 1px 6px;
+	text-decoration: none;
+}

@@ -65,7 +65,7 @@
     <!-- end #page -->
 </div>
 <div id="footer">
-    <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+    <p> Design by  <a href="https://github.com/viktorblovytskyi" rel="nofollow">Viktor Blovytskyi</a>.</p>
 </div>
 <!-- end #footer -->
 </body>
