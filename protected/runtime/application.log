@@ -20,3 +20,32 @@ Stack trace:
 REQUEST_URI=/vbapp1.com/index.php/gii/model/index
 HTTP_REFERER=http://localhost/vbapp1.com/index.php/gii/default/index
 ---
+2015/12/30 14:14:15 [error] [php] Undefined variable: model (C:\xampp\htdocs\vbapp1.com\themes\modern\views\layouts\main.php:55)
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\widgets\CContentDecorator.php(76): NumbersController->renderFile()
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\vbapp1.com\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\vbapp1.com\framework\web\CBaseController.php(308): NumbersController->endWidget()
+#5 C:\xampp\htdocs\vbapp1.com\protected\views\layouts\column2.php(22): NumbersController->endContent()
+#6 C:\xampp\htdocs\vbapp1.com\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\vbapp1.com\framework\web\CBaseController.php(95): NumbersController->renderInternal()
+#8 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(784): NumbersController->renderFile()
+#9 C:\xampp\htdocs\vbapp1.com\protected\controllers\NumbersController.php(128): NumbersController->render()
+#10 C:\xampp\htdocs\vbapp1.com\framework\web\actions\CInlineAction.php(49): NumbersController->actionIndex()
+#11 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\vbapp1.com\framework\web\filters\CFilterChain.php(133): NumbersController->runAction()
+#13 C:\xampp\htdocs\vbapp1.com\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\vbapp1.com\framework\web\filters\CInlineFilter.php(58): NumbersController->filterAccessControl()
+#16 C:\xampp\htdocs\vbapp1.com\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(265): NumbersController->runActionWithFilters()
+#19 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): NumbersController->run()
+#20 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\vbapp1.com\index.php(13): CWebApplication->run()
+REQUEST_URI=/vbapp1.com/index.php/numbers/index
+in C:\xampp\htdocs\vbapp1.com\themes\modern\views\layouts\main.php (55)
+in C:\xampp\htdocs\vbapp1.com\protected\views\layouts\column2.php (22)
+in C:\xampp\htdocs\vbapp1.com\protected\controllers\NumbersController.php (128)

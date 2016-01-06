@@ -26,4 +26,5 @@ $this->menu=array(
 		'address',
 		'entity_name',
 	),
-)); ?>
+
+));?>

@@ -9,6 +9,10 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Tелефонный справочник',
 	'language' => 'ru',
+	'sourceLanguage' => 'ru',
+	'defaultController'=>'numbers',
+
+	'theme' => 'modern',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -81,6 +85,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'leito3101@gmail.com',
 	),
 );
