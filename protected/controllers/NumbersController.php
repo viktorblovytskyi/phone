@@ -172,4 +172,14 @@ class NumbersController extends Controller
 		}
 	}
 
+	/**
+	 * Display search result.
+	 * @return Numbers $model after search
+	 *
+	 */
+	public function actionSearch()
+	{
+
+	}
+
 }

@@ -6,9 +6,8 @@
 <div id="content">
     <div class="post">
 
-
     <b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
-    <?php echo CHtml::encode($data->phone); ?>
+        <?php echo CHtml::link($data->phone, array($data->id)); ?>
     <br />
 
     <b><?php echo CHtml::encode($data->getAttributeLabel('owner')); ?>:</b>

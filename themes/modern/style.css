@@ -521,3 +521,10 @@ ul.yiiPager a:link, ul.yiiPager a:visited {
 	padding: 1px 6px;
 	text-decoration: none;
 }
+
+table.detail-view tr.odd {
+	background: #FFDEAD;
+}
+table.detail-view tr.even {
+	background: #FFFFF0;
+}

@@ -19,7 +19,8 @@ $this->menu=array(
 
     </div>
 
-<h1>View Numbers #<?php echo $model->id; ?></h1>
+<h1>Phone: <?php echo $model->phone; ?></h1>
+<br>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
     'data'=>$model,

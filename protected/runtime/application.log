@@ -366,3 +366,91 @@ REQUEST_URI=/vbapp1.com/index.php/numbers/index
 in C:\xampp\htdocs\vbapp1.com\themes\modern\views\layouts\main.php (41)
 in C:\xampp\htdocs\vbapp1.com\protected\controllers\NumbersController.php (129)
 in C:\xampp\htdocs\vbapp1.com\index.php (13)
+2016/01/10 16:33:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/5?text=32423523
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/5?text=32423523
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/5
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/5
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/5
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "numbers".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('numbers')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('numbers')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/numbers')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/numbers/6
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "5".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('5')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('5')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/5')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/5/5
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
+2016/01/10 16:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "5".' in C:\xampp\htdocs\vbapp1.com\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\vbapp1.com\framework\web\CController.php(270): CController->missingAction('5')
+#1 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(282): CController->run('5')
+#2 C:\xampp\htdocs\vbapp1.com\framework\web\CWebApplication.php(141): CWebApplication->runController('numbers/5')
+#3 C:\xampp\htdocs\vbapp1.com\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\vbapp1.com\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/vbapp1.com/index.php/numbers/5/5
+HTTP_REFERER=http://localhost/vbapp1.com/index.php/numbers/index
+---
