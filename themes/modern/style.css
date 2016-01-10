@@ -104,39 +104,39 @@ a:hover {
 
 /* Search */
 
-#search {
-	float: right;
-	width: 279px;
-	height: 110px;
-	padding: 0;
-	background: url(images/img02.jpg) no-repeat left top;
-}
+/*#search {*/
+	/*float: right;*/
+	/*width: 279px;*/
+	/*height: 110px;*/
+	/*padding: 0;*/
+	/*background: url(images/img02.jpg) no-repeat left top;*/
+/*}*/
 
-#search form {
-	height: 41px;
-	margin: 0;
-	padding: 10px 0 0 20px;
-}
+/*#search form {*/
+	/*height: 41px;*/
+	/*margin: 0;*/
+	/*padding: 10px 0 0 20px;*/
+/*}*/
 
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
+/*#search fieldset {*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*border: none;*/
+/*}*/
 
-#search-text {
-	width: 195px;
-	padding: 9px 10px;
-	border: none;
-	background: none;
-	text-transform: lowercase;
-	font: normal 11px Arial, Helvetica, sans-serif;
-	color: #808080;
-}
+/*#search-text {*/
+	/*width: 195px;*/
+	/*padding: 9px 10px;*/
+	/*border: none;*/
+	/*background: none;*/
+	/*text-transform: lowercase;*/
+	/*font: normal 11px Arial, Helvetica, sans-serif;*/
+	/*color: #808080;*/
+/*}*/
 
-#search-submit {
-	display: none;
-}
+/*#search-submit {*/
+	/*display: none;*/
+/*}*/
 
 /* Menu */
 
@@ -525,6 +525,21 @@ ul.yiiPager a:link, ul.yiiPager a:visited {
 table.detail-view tr.odd {
 	background: #FFDEAD;
 }
+
 table.detail-view tr.even {
 	background: #FFFFF0;
+}
+
+.grid-view table.items tr.odd {
+	background: #FFDEAD;
+}
+
+.grid-view table.items tr.even {
+	background: #FFFFF0;
+}
+
+.grid-view table.items th {
+	color: white;
+	background: #FF4500;
+	text-align: center;
 }

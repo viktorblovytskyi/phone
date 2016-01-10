@@ -7,6 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title><?php echo $this->pageTitle; ?></title>
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <div id="wrapper">
@@ -38,7 +39,16 @@
                 </div>
                 <!-- end #content -->
                 <div id="sidebar">
-
+                    <!-- Search widget -->
+                    <div class="portlet-title">Search by phone:</div>
+                        <?php echo CHtml::form('search','GET'); ?>
+                        <?php echo CHtml::textField('search'); ?>
+                    <div class="search-form"
+                        <?php echo CHtml::submitButton('submit'); ?>
+                    </div>
+                    <?php    echo CHtml::endForm(); ?>
+                    <!--End search widget-->
+                    <br>
                     <?php
                     $this->beginWidget('zii.widgets.CPortlet', array(
                         'title'=>'Operations',
@@ -49,6 +59,7 @@
                     ));
                     $this->endWidget();
                     ?>
+                    <br>
                 </div>
                 <!-- end #sidebar -->
                 <div style="clear: both;">&nbsp;</div>

@@ -4,8 +4,6 @@
 ?>
 
 <div class="view">
-
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
 	<?php echo CHtml::encode($data->phone); ?>
 	<br />
@@ -20,10 +18,9 @@
 
 
 	<?php if (empty($data->entity_name) != 1 and $data->owner == 'entity'): ?>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('entity_name')); ?>:</b>
-	<?php echo CHtml::encode($data->entity_name);?>
+	<b>	<?php echo CHtml::encode($data->getAttributeLabel('entity_name')); ?>:</b>
+		<?php echo CHtml::encode($data->entity_name);?>
 	<br />
 	<?php endif; ?>
-
 
 </div>

@@ -138,7 +138,6 @@ class NumbersController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Numbers']))
 			$model->attributes=$_GET['Numbers'];
-
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -174,12 +173,25 @@ class NumbersController extends Controller
 
 	/**
 	 * Display search result.
+	 * @param $search
 	 * @return Numbers $model after search
 	 *
 	 */
-	public function actionSearch()
+	public function actionSearch($search)
 	{
+		if(isset($search)){
+			$this->render('view',array(
+				'model'=>$this->searchByPhone($search),
+			));
+		}
 
+	}
+
+	public function searchByPhone($phone){
+		$model=Numbers::model()->findByAttributes(array('phone'=>$phone));
+		if($model===null)
+			throw new CHttpException('Phone was not found.');
+		return $model;
 	}
 
 }
