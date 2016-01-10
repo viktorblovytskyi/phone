@@ -15,14 +15,6 @@
             <h1><a href="#">Telephone </a></h1>
             <p>directory</p>
         </div>
-        <div id="search">
-            <form method="get" action="">
-                <fieldset>
-                    <input type="text" name="s" id="search-text" size="15" value="enter keywords here..." />
-                    <input type="submit" id="search-submit" value="GO" />
-                </fieldset>
-            </form>
-        </div>
     </div>
     <!-- end #header -->
     <div id="menu">
@@ -46,6 +38,7 @@
                 </div>
                 <!-- end #content -->
                 <div id="sidebar">
+
                     <?php
                     $this->beginWidget('zii.widgets.CPortlet', array(
                         'title'=>'Operations',

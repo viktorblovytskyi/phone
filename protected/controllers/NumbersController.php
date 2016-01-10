@@ -28,7 +28,7 @@ class NumbersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','search'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -42,6 +42,7 @@ class NumbersController extends Controller
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
+
 		);
 	}
 
@@ -62,7 +63,7 @@ class NumbersController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Numbers;
+		$model = new Numbers;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -122,7 +123,7 @@ class NumbersController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Numbers');
+		$dataProvider = new CActiveDataProvider('Numbers');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -170,4 +171,5 @@ class NumbersController extends Controller
 			Yii::app()->end();
 		}
 	}
+
 }
